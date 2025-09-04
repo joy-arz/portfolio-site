@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jony Wijaya - Portofolio Site</title>
+
+  <!--
+    - favicon
+  --> 
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --mouse-x: 50%;
+      --mouse-y: 50%;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(
+        circle 800px at var(--mouse-x) var(--mouse-y),
+        hsla(45, 100%, 72%, 0.15),
+        transparent 40%
+      );
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .about,
+    .resume,
+    .portfolio,
+    .blog,
+    .contact {
+      background-color: hsla(240, 1%, 17%, 0.8) !important;
+    }
+
+    .sidebar {
+      background-color: hsla(0, 0%, 22%, 0.8) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.webp" alt="Jony Wijaya" width="80" style="border-radius: 20%;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jony Wijaya">Jony Wijaya</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jony.huang.priv@gmail.com" class="contact-link">jony.huang.priv@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="https://wa.me/6282276381667" class="contact-link">+62 (822) 7638 1667</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2005-07-04">July 04, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bandung, West Java, Indonesia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jony-wijaya-966247329/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/joy.arz/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://wa.me/6282276381667" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hi, I’m Jony Wijaya — a passionate creative and tech enthusiast based in Bandung. With a unique blend of experience in graphic design, programming, and education, I thrive at the intersection of design and functionality. Whether it's managing an online store, designing AI review flows, or mentoring kids in Buddhist youth programs, I bring a hands-on, thoughtful approach to everything I do.
+          </p>
+
+          <p>
+            I’m skilled in tools like Adobe Suite, Figma, Unity, and languages including Python, C, HTML/CSS/JS — always eager to learn and take on new challenges.
+          </p>
+
+          <p>
+            Having grown up with limited resources, I've learned to be resilient, honest, and resourceful. My journey has shaped me into someone who’s determined to create meaningful work while staying grounded in purpose.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Graphic Design</h4>
+
+                <p class="service-item-text">
+                  Creating clean, modern visuals — from logos to layouts — that bring ideas to life with clarity and style.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Building responsive, user-friendly websites that not only look good but work smoothly across all devices.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cyber Security</h4>
+
+                <p class="service-item-text">
+                  Exploring and applying techniques to keep systems secure, data safe, and vulnerabilities patched.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item hide">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-game.svg" alt="game icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game Development</h4>
+
+                <p class="service-item-text">
+                  Creating engaging and interactive gaming experiences using Godot, blending creativity with technical skills.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  Capturing meaningful moments and visuals — from portraits to street shots — with a creative and cinematic touch.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials hide">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients hide">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universitas Prima Indonesia - Computer Science</h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Enrolled as a student but stopped enrolling due to personal circumstances.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMKS Sultan Iskandar Muda - Visual Communication Design</h4>
+
+              <span>2021 - 2024</span>
+
+              <p class="timeline-text">
+                Studied visual communication design with hands-on experience in graphic design, branding, multimedia, and creative tools like Adobe Suite. Graduated with a strong foundation in visual storytelling and design thinking.	
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+		  
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical Skills Assessor (AI Response and Code) - Outlier</h4>
+
+              <span>Mar 2025 – Present</span>
+
+              <p class="timeline-text">
+                Reviewed AI responses for prompt quality, understandability, completeness, groundedness, and truthfulness.
+				Rated prompt rateability before evaluating responses to ensure relevance and accuracy.
+				Provided feedback to improve algorithms and user experience.
+				Assigned and completed skill screenings in Python, JavaScript, Go, Swift, C++, and C#, demonstrating technical proficiency across multiple programming languages.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">E-Commerce Manager - Mega Toys</h4>
+
+              <span>Dec 2024 – Present</span>
+
+              <p class="timeline-text">
+                Oversaw daily operations, handled listings, pricing, and campaigns.
+				Resolved customer issues and boosted satisfaction.
+				Analyzed trends to improve performance.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sales & Social Media - Merlin Jaya Service</h4>
+
+              <span>Jul 2024 – Dec 2024</span>
+
+              <p class="timeline-text">
+                Assisted customers in selecting the right car accessories based on their needs and preferences. 
+				Managed inventory and ensured the store was well-stocked with products. 
+				Created daily social media posts to attract and engage new customers.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Visual Designer Intern - Yayasan Ekosistem Lestari</h4>
+
+              <span>Jan 2024 – Jul 2024</span>
+
+              <p class="timeline-text">
+                Designed over 20+ social media contents, website prototypes, and merchandise.
+				Collaborated with the education team to ensure informative and purposeful content.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+		
+		<section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Organizational Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">IPGABI Virsa (Ikatan Pembina Gelanggang Anak Buddhist Indonesia)</h4>
+
+              <span>2021 – 2024</span>
+
+              <p class="timeline-text">
+                Children’s Mentor
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Persatuan Muda-Mudi Vihara Ratana Stupa Agung</h4>
+
+              <span>2021 - 2024</span>
+
+              <p class="timeline-text">
+                Media Communication
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+		
+		<section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Achievement</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Provincial Best TOEIC Score Achiever</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                International Test Center
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">3rd Winner of Speech Competition "Indonesia Merdeka"</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                SMKS Sultan Iskandar Muda - North Sumatra
+              </p>
+
+            </li>
+			
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">3rd Winner of Academic Competition – Buddhist Quiz Competiti17</h4>
+
+              <span>2017</span>
+
+              <p class="timeline-text">
+                Perwakilan Umat Buddha Indonesia - North Sumatra
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Programming Languages (C, Python, & Javascript)</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list hide	">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item hide">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item hide">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+			<li class="filter-item">
+              <button data-filter-btn>Miscelanious</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select hide" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item hide">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+			  
+			        <li class="select-item">
+                <button data-select-item>Miscelanious</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+		  
+	      		<li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="https://website-one-green-64.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/port-3.webp" alt="Glowing Simplistic Portofolio Site" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Glowing Simplistic Portofolio Site</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+		  
+	      		<li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="https://orbit-commerce-dash.vercel.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/port-2.webp" alt="Orbit E-Commerce Dashboard" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orbit E-Commerce Dashboard</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Miscelanious">
+              <a href="https://github.com/JonyHuangPriv/tokyo-jade-theme">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/port-1.webp" alt="VSCode Theme" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tokyo Jade Theme</h3>
+
+                <p class="project-category">Miscelanious</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/996d926273cb">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-8.webp" alt="I Made a Trading Bot. Now What?" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-13">June 13, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">I Made a Trading Bot. Now What?</h3>
+
+                  <p class="blog-text">
+                    by Someone Who Shouldn’t Be Allowed Near Financial Instruments but Did It Anyway
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/7db5553df5c5">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-7.webp" alt="I Made a Weather App That Can't Predict My Mood" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-08">June 08, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">I Made a Weather App That Can't Predict My Mood</h3>
+
+                  <p class="blog-text">
+                    Turns out JavaScript can fetch the temperature, but not my existential dread.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/4baef78acc4c">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.webp" alt="Debugging: AKA Playing Hide and Seek With My Mistakes" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-07">June 07, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Debugging: AKA Playing Hide and Seek With My Mistakes</h3>
+
+                  <p class="blog-text">
+                    “Ready or not, here I come… wait, where the heck is this bug hiding?”
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/3e7bdd070e05">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.webp" alt="I Built a Portfolio Website… Now I Just Need Skills" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-05">June 05, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">I Built a Portfolio Website… Now I Just Need Skills</h3>
+
+                  <p class="blog-text">
+                    Fake it till you make it… but also, like, actually make it eventually.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/7f3d668e980f">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.webp" alt="How to Stay Motivated When Learning to Code Alone" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-04">June 04, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">How to Stay Motivated When Learning to Code Alone</h3>
+
+                  <p class="blog-text">
+                    Because your compiler won’t clap for you when you finally fix that bug.
+                  </p>
+
+                </div>
+
+              </a>
+            </li> 
+		  
+        		<li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/ca7d85ae9a56">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.webp" alt="What Coding Taught Me About Solving Real-World Problems" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-06-02">June 02, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">What Coding Taught Me About Solving Real-World Problems</h3>
+
+                  <p class="blog-text">
+                    Spoiler: Debugging life is harder than debugging code.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>  
+		  
+	        	<li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/b58043871042">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.webp" alt="Why Every Beginner Should Build Their Own Portfolio Website" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-05-31">May 31, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Why Every Beginner Should Build Their Own Portfolio Website</h3>
+
+                  <p class="blog-text">
+                    Because “I’m good at computers” doesn’t look great on a résumé.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@jony.huang.priv/24d0dbcc54bd">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.webp" alt="Programming Made Simple: A Beginner’s Guide to Writing Your First Line of Code" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-05-30">May 30, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Programming Made Simple: A Beginner’s Guide to Writing Your First Line of Code</h3>
+
+                  <p class="blog-text">
+                    Welcome to the world of programming! If you’ve ever been curious about how your favorite apps were built or how websites come to life…
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=Bandung&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" class="form" data-form method="POST">
+
+            <input type="hidden" name="access_key" value="d417134c-40c4-445c-bb8e-ae19e5d2b28b">
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth) * 100 + '%';
+    const y = (e.clientY / window.innerHeight) * 100 + '%';
+    document.body.style.setProperty('--mouse-x', x);
+    document.body.style.setProperty('--mouse-y', y);
+  });
+  </script>
+</body>
+
+</html>
