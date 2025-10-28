@@ -1,0 +1,15 @@
+# Allow all search engines to crawl your site
+User-agent: *
+Allow: /
+
+# Disallow crawling of specific directories (if any)
+# Uncomment and modify these lines if you have directories you want to block
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://joyarz.space/sitemap.xml
+
+# Crawl-delay (optional - only use if you experience server load issues)
+# Crawl-delay: 10
