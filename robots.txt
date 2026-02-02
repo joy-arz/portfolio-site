@@ -11,5 +11,4 @@ Allow: /
 # Sitemap location
 Sitemap: https://joyarz.space/sitemap.xml
 
-# Crawl-delay (optional - only use if you experience server load issues)
-# Crawl-delay: 10
+Crawl-delay: 10
